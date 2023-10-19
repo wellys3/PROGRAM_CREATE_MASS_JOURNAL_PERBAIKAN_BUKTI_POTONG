@@ -710,7 +710,7 @@ FORM f_posting    USING p_fl_check  "X = Check | <BLANK> = No Check
   ENDIF.
 
   "*--------------------------------------------------------------------*
-  "Insert Log ZFIDT00326
+  "Insert Log ZFIDT00326 & ZFIDT00327
 
   CLEAR lit_return[].
   PERFORM f_insert_zfidt00326 TABLES lit_lineitem
@@ -2296,9 +2296,9 @@ FORM f_insert_log  USING    p_kind_of_log
 
   ENDIF.
 
-  CLEAR ld_seqno.
-
 *--------------------------------------------------------------------*
+
+  CLEAR ld_seqno.
 
 ENDFORM.
 
